@@ -7,14 +7,11 @@ body{
     color: white;
 }
 
+/* ________________ Navbar ________________*/
 #main-nav{
     background-color: #2c3e50;
     font-weight: 600;
-    padding: 24px 16px;
-}
-
-#main-nav a{
-    color: white;
+    padding: 16px 0;
 }
 
 .navbar{
@@ -22,18 +19,43 @@ body{
     border: none;
     border-radius: 0;
 }
-.navbar-header a{
-    font-size: 28px;
+
+.navbar-default .navbar-brand{
+    color: white;
     font-weight: 600;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: white;
 }
 
 #main-nav ul{
     list-style: none;
 }
-.nav-item a{
+
+.navbar-default .navbar-nav > li > a{
+    color: white;
     font-size: 16px;
-    /* padding: 16px;
-    line-height: 24px; */
+}
+
+.navbar-default .navbar-nav > li > a:hover{
+    color: #1abc9c;
+}
+
+
+.navbar-header .navbar-toggle{
+    background-color: #1abc9c;
+    border: 1px solid #1abc9c;
+    border-radius: 5px;
+}
+.navbar-header .navbar-toggle > span {
+    font-size: 14px;
+    display: inline-block;
+    color: white;
+}
+.navbar-default .navbar-toggle .icon-bar{
+    background-color: white;
+    width: 13px;
 }
 
 /* ________________ Start Bootstrap ________________*/
@@ -46,4 +68,16 @@ body{
 
 #start-bootstrap{
 
+}
+
+/* ________________ Media Query ________________*/
+
+@media screen and (min-width: 768px) {
+    #main-nav{
+        padding: 24px 16px;
+    }
+
+    .navbar-header a{
+        font-size: 28px;
+    }
 }
