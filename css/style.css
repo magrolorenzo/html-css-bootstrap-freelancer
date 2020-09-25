@@ -7,6 +7,18 @@ body{
     color: white;
 }
 
+section{
+    padding: 100px 0;
+}
+
+.green-bg{
+    background-color: #1abc9c;
+}
+
+.white-text{
+    color: white;
+}
+
 /* ________________ Navbar ________________*/
 #main-nav{
     background-color: #2c3e50;
@@ -60,19 +72,52 @@ body{
 
 /* ________________ Start Bootstrap ________________*/
 #start-bootstrap{
-    background-color: #1abc9c;
-    color: white;
     text-align: center;
-    padding: 100px 0;
 }
 
-#start-bootstrap{
-
+.start-bootstrap-title{
+    font-size: 44px;
+    font-weight: 600;
 }
+
+.start-bootstrap-text{
+    font-size: 20px;
+}
+
+#avatar{
+    max-width: 240px;
+    margin-bottom: 50px;
+}
+
+.star-separator{
+    margin: 20px 0;
+}
+
+.fa-star{
+    margin: 0 15px;
+}
+
+.star-separator::before, .star-separator::after{
+    content:'';
+    height: 4px;
+    width: 100px;
+    background-color: white;
+    border-radius: 3px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+
+
+
+
 
 /* ________________ Media Query ________________*/
 
 @media screen and (min-width: 768px) {
+
+
     #main-nav{
         padding: 24px 16px;
     }
@@ -80,4 +125,15 @@ body{
     .navbar-header a{
         font-size: 28px;
     }
+
+    .start-bootstrap-title{
+        font-size: 64px;
+        font-weight: 700;
+    }
+
+    .start-bootstrap-text{
+        font-size: 24px;
+    }
+
+
 }
