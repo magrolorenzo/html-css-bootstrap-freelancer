@@ -23,6 +23,26 @@ section{
     color: #2c3e50;
 }
 
+.star-separator{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.fa-star{
+    margin: 0 15px;
+    vertical-align: middle;
+}
+
+.star-separator::before, .star-separator::after{
+    content:'';
+    height: 4px;
+    width: 100px;
+    background-color: white;
+    border-radius: 3px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
 /* ________________ Navbar ________________*/
 #main-nav{
     background-color: #2c3e50;
@@ -93,42 +113,36 @@ section{
     margin-bottom: 50px;
 }
 
-.star-separator{
-    margin: 20px 0;
-}
 
-.fa-star{
-    margin: 0 15px;
-    vertical-align: middle;
-}
-
-.star-separator::before, .star-separator::after{
-    content:'';
-    height: 4px;
-    width: 100px;
-    background-color: white;
-    border-radius: 3px;
-    display: inline-block;
-    vertical-align: middle;
-}
 
 /* ________________ Portfolio ________________*/
 #portfolio{
-    text-align: center;
+
+    color: #2c3e50;
 }
 
 .portfolio-title{
+    text-align: center;
     font-size: 36px;
     font-weight: 700;
-    color: #2c3e50;
 }
 
 #portfolio .star-separator::before, #portfolio .star-separator::after{
     background-color: #2c3e50;
 }
 
+.img-column{
+    margin-bottom: 50px;
+}
 
+.img-column img{
+    width: 100%;
+    max-width: 400px;
+}
 
+.img-container img:hover{
+    opacity: 0.2;
+}
 
 /* ________________ Media Query ________________*/
 
@@ -156,7 +170,10 @@ section{
     /* ________________ Portfolio ________________*/
     .portfolio-title{
         font-size: 48px;
+    }
 
+    .img-column img{
+        max-width: 332px;
     }
 
 }
