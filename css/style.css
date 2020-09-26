@@ -84,6 +84,12 @@ section{
     border: 1px solid #1abc9c;
     border-radius: 5px;
 }
+.navbar-header .navbar-toggle:hover{
+    background-color: #148f77;
+    border-color: #148f77;
+    color: white;
+
+}
 .navbar-header .navbar-toggle > span {
     font-size: 14px;
     display: inline-block;
@@ -93,6 +99,7 @@ section{
     background-color: white;
     width: 13px;
 }
+
 
 /* ________________ Start Bootstrap ________________*/
 #start-bootstrap{
@@ -201,8 +208,18 @@ section{
     height: 92px;
 }
 
+form .btn-default{
+    background-color: #1abc9c;
+    color: white;
+    border-radius: 8px;
+    padding: 16px 28px;
+    font-size: 20px;
+}
 
-
+form .btn-default:hover{
+    background-color: #148f77;
+    color: white;
+}
 
 
 
