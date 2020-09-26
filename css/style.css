@@ -117,7 +117,7 @@ section{
 
 /* ________________ Portfolio ________________*/
 #portfolio{
-
+    text-align: center;
     color: #2c3e50;
 }
 
@@ -136,13 +136,54 @@ section{
 }
 
 .img-column img{
-    width: 100%;
     max-width: 400px;
+}
+.img-container{
+    display: inline-block;
+    border-radius: 6px;
 }
 
 .img-container img:hover{
     opacity: 0.2;
 }
+
+/* ________________ About ________________*/
+#about{
+    text-align: center;
+}
+
+.about-title{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.about-parag{
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+#about .btn{
+    background-color: #1abc9c;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 16px 28px;
+    font-size: 20px;
+}
+
+#about .btn:hover{
+    background-color: white;
+    color: #1a252f ;
+}
+
+.ml{
+    margin-left: auto;
+}
+
+.mr{
+    margin-right: auto;
+}
+
 
 /* ________________ Media Query ________________*/
 
@@ -168,12 +209,18 @@ section{
     }
 
     /* ________________ Portfolio ________________*/
-    .portfolio-title{
+    .portfolio-title, .about-title{
         font-size: 48px;
     }
 
     .img-column img{
-        max-width: 332px;
+        max-width: 271px;
     }
 
+}
+
+@media screen and (min-width: 1199px) {
+    .img-column img{
+        max-width: 332px;
+    }
 }
