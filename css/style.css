@@ -270,8 +270,9 @@ section{
     box-shadow: none;
 }
 
-.form-control{
-
+.form-control:focus{
+    box-shadow: none;
+    border-color: lightgrey;
 }
 
 form .btn-default{
